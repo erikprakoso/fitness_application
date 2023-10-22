@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:fitness_application/widgets/four_onboarding_frame.dart';
 import 'package:fitness_application/widgets/four_onboarding_content.dart';
+import 'package:fitness_application/pages/first_register_page.dart';
 
 class FourOnboardingPage extends StatelessWidget {
   const FourOnboardingPage({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class FourOnboardingPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => FirstRegisterPage()));
         },
         backgroundColor:
             Colors.transparent, // Atur latar belakang menjadi transparan
